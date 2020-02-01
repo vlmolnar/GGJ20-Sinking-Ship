@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Plank")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             plankCount += 1;
             SetCountText();
 
