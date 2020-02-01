@@ -9,12 +9,17 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public int playerId;
     public Text countText;
+    public Text ladderText;
     public GameObject water;
 
     //Private variables
     private Rigidbody rb;
     private int plankCount;
+    private int ladderCount;
+    private const int MAX_LADDER = 5;
     private float wadingModifier;
+    private bool canMove;
+    private double interactionStart = -10;
 
     // Start is called before the first frame update
     void Start()
@@ -66,20 +71,35 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider trigger)
-    {
-        //action = Input.GetAxis("Horizontal1");
-        if (trigger.gameObject.CompareTag("Window"))
-        {
-            trigger.gameObject.SetActive(false);
-            //count += 1;
-            //SetCountText();
-        }
-    }
-
     void SetCountText()
     {
         countText.text = "Plank x " + plankCount.ToString();
+        ladderText.text = "Ladder x " + ladderCount.ToString() + "/" + MAX_LADDER;
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        Debug.Log("Plank: " + plankCount + ", ladder: " + ladderCount);
+        if ((playerId == 1 && Input.GetKeyDown("space")) || (playerId == 2 && Input.GetKeyDown(KeyCode.RightShift)))
+        {
+            if (other.tag == "LadderTrigger" && plankCount > 0)
+            {
+                canMove = false;
+                interactionStart = Time.realtimeSinceStartup;
+                plankCount -= 1;
+                ladderCount += 1;
+                SetCountText();
+                Debug.Log("Interacting with ladder");
+            }
+            else if (other.tag == "Window")
+            {
+                //TODO
+                canMove = false;
+                interactionStart = Time.realtimeSinceStartup;
+                Debug.Log("Interacting with window");
+            }
+
+        }
     }
 
 }
