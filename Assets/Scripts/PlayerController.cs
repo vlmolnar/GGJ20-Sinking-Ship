@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        canMove = true;
         SetCountText();
         wadingModifier = 1.0f;
     }
@@ -32,6 +33,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (!canMove)
+        {
+            if (Time.realtimeSinceStartup - interactionStart < 3) return;
+            else canMove = true;
+        }
+
         float moveHorizontal, moveVertical;
         if (playerId == 1)
         {
@@ -80,6 +87,9 @@ public class PlayerController : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         //Debug.Log("Plank: " + plankCount + ", ladder: " + ladderCount);
+
+        if (!canMove) return;
+
         if ((playerId == 1 && Input.GetKeyDown("space")) || (playerId == 2 && Input.GetKeyDown(KeyCode.RightShift)))
         {
             if (other.tag == "LadderTrigger" && plankCount > 0)
@@ -94,9 +104,29 @@ public class PlayerController : MonoBehaviour
             else if (other.tag == "Window")
             {
                 //TODO
-                canMove = false;
-                interactionStart = Time.realtimeSinceStartup;
-                Debug.Log("Interacting with window");
+                /*if (canMove)
+                {
+                    interactionStart = Time.realtimeSinceStartup;
+                    canMove = false;
+                }
+                if (!canMove)
+                {
+                    Time.realtimeSinceStartup - lastActive > 2;
+                }
+                
+
+                
+                if (isActive)
+                {
+                    isActive = false;
+                    lastActive = Time.realtimeSinceStartup;
+                }
+                else if ()
+                {
+                    //fix window
+                    canMove = true;
+                }
+                Debug.Log("Interacting with window");*/
             }
 
         }
