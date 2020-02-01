@@ -9,16 +9,19 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public int playerId;
     public Text countText;
+    public GameObject water;
 
     //Private variables
     private Rigidbody rb;
     private int plankCount;
+    private float wadingModifier;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         SetCountText();
+        wadingModifier = 1.0f;
     }
 
     // Update is called once per frame
@@ -37,11 +40,16 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
+        if (water.transform.position.y > 0)
+        {
+            wadingModifier = 1 - (water.transform.position.y / 10);
+        }
+
         if (movement != Vector3.zero)
         {
             // Source: https://answers.unity.com/questions/803365/make-the-player-face-his-movement-direction.html
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
-            transform.Translate(movement * speed * Time.deltaTime, Space.World);
+            transform.Translate(movement * speed * wadingModifier * Time.deltaTime, Space.World);
         }
 
     }

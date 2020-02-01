@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Plank
+  - Water1
+  - Water2
   layers:
   - Default
   - TransparentFX
