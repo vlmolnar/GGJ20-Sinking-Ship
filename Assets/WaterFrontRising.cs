@@ -7,9 +7,18 @@ public class WaterFrontRising : MonoBehaviour
 
     public GameObject water;
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private Vector3 offset;
+
+    void Start()
     {
-        transform.position = water.transform.position;
+        offset = transform.position - water.transform.position;
+
     }
+
+    // Update is called once per frame
+    void LateUpdate()
+    {
+        transform.position = water.transform.position + offset;
+    }
+
 }

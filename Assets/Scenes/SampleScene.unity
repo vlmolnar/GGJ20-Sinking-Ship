@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44164482, g: 0.49053293, b: 0.5705272, a: 1}
+  m_IndirectSpecularColor: {r: 0.44164535, g: 0.49053323, b: 0.57052785, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -919,6 +919,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1512825811767558648, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 1374897214}
     - target: {fileID: 2780856520241529438, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1282,6 +1287,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10.7
       objectReference: {fileID: 0}
+    - target: {fileID: 1512825811767558648, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 1990575467}
     - target: {fileID: 2134050181020132155, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_IsActive

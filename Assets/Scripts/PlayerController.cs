@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        Debug.Log("Plank: " + plankCount + ", ladder: " + ladderCount);
+        //Debug.Log("Plank: " + plankCount + ", ladder: " + ladderCount);
         if ((playerId == 1 && Input.GetKeyDown("space")) || (playerId == 2 && Input.GetKeyDown(KeyCode.RightShift)))
         {
             if (other.tag == "LadderTrigger" && plankCount > 0)
