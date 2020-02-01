@@ -7,6 +7,7 @@ TagManager:
   - Plank
   - Water1
   - Water2
+  - Window
   layers:
   - Default
   - TransparentFX

@@ -66,6 +66,17 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void OnTriggerEnter(Collider trigger)
+    {
+        //action = Input.GetAxis("Horizontal1");
+        if (trigger.gameObject.CompareTag("Window"))
+        {
+            trigger.gameObject.SetActive(false);
+            //count += 1;
+            //SetCountText();
+        }
+    }
+
     void SetCountText()
     {
         countText.text = "Plank x " + plankCount.ToString();
