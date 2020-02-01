@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public Text countText;
     public Text ladderText;
     public GameObject water;
+    public WindowScript script;
 
     //Private variables
     private Rigidbody rb;
@@ -103,11 +104,20 @@ public class PlayerController : MonoBehaviour
             }
             else if (other.tag == "Window") // and window is broken
             {
-                canMove = false;
-                interactionStart = Time.realtimeSinceStartup;
+                script = other.gameObject.GetComponent<WindowScript>();
+                if (!script.isFixed)
+                {
+                    Debug.Log("Start fixing window");
+                    canMove = false;
+                    interactionStart = Time.realtimeSinceStartup;
+                }
+                else
+                {
+                    Debug.Log("Window is already fixed");
+                }
                
                 //fix window
-                Debug.Log("Interacting with window");
+                
             }
 
         }
