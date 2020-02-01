@@ -21,12 +21,16 @@ public class PlayerController : MonoBehaviour
     private float wadingModifier;
     private bool canMove;
     private double interactionStart = -10;
+    private bool buildingLadder;
+    private bool fixingWindow;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         canMove = true;
+        buildingLadder = false;
+        fixingWindow = false;
         SetCountText();
         wadingModifier = 1.0f;
     }
@@ -34,10 +38,38 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!canMove)
+        if (fixingWindow)
         {
-            if (Time.realtimeSinceStartup - interactionStart < 3) return;
-            else canMove = true;
+            if (Time.realtimeSinceStartup - interactionStart < 2)
+            {
+                //Debug.Log(Time.realtimeSinceStartup - interactionStart);
+                return;
+            }
+            else
+            {
+                script.isFixed = true;
+                fixingWindow = false;
+                canMove = true;
+                Debug.Log("Finished fixing window");
+            }
+
+        }
+        else if (buildingLadder)
+        {
+            if (Time.realtimeSinceStartup - interactionStart < 3)
+            {
+                //Debug.Log(Time.realtimeSinceStartup - interactionStart);
+                return;
+            }
+            else
+            {
+                plankCount -= 1;
+                ladderCount += 1;
+                SetCountText();
+                buildingLadder = false;
+                canMove = true;
+                Debug.Log("Finished using plank for ladder");
+            }
         }
 
         float moveHorizontal, moveVertical;
@@ -97,19 +129,18 @@ public class PlayerController : MonoBehaviour
             {
                 canMove = false;
                 interactionStart = Time.realtimeSinceStartup;
-                plankCount -= 1;
-                ladderCount += 1;
-                SetCountText();
-                Debug.Log("Interacting with ladder");
+                buildingLadder = true;
+                Debug.Log("Started using plank for ladder");
             }
             else if (other.tag == "Window") // and window is broken
             {
                 script = other.gameObject.GetComponent<WindowScript>();
                 if (!script.isFixed)
                 {
-                    Debug.Log("Start fixing window");
                     canMove = false;
                     interactionStart = Time.realtimeSinceStartup;
+                    fixingWindow = true;
+                    Debug.Log("Started fixing window");
                 }
                 else
                 {

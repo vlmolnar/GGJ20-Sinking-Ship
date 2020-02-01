@@ -10,7 +10,7 @@ public class WindowScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isFixed = true;
+        isFixed = false;
     }
 
     // Update is called once per frame
