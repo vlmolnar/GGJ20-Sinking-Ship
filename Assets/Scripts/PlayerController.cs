@@ -101,32 +101,13 @@ public class PlayerController : MonoBehaviour
                 SetCountText();
                 Debug.Log("Interacting with ladder");
             }
-            else if (other.tag == "Window")
+            else if (other.tag == "Window") // and window is broken
             {
-                //TODO
-                /*if (canMove)
-                {
-                    interactionStart = Time.realtimeSinceStartup;
-                    canMove = false;
-                }
-                if (!canMove)
-                {
-                    Time.realtimeSinceStartup - lastActive > 2;
-                }
-                
-
-                
-                if (isActive)
-                {
-                    isActive = false;
-                    lastActive = Time.realtimeSinceStartup;
-                }
-                else if ()
-                {
-                    //fix window
-                    canMove = true;
-                }
-                Debug.Log("Interacting with window");*/
+                canMove = false;
+                interactionStart = Time.realtimeSinceStartup;
+               
+                //fix window
+                Debug.Log("Interacting with window");
             }
 
         }
