@@ -33,7 +33,9 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        rb.AddForce(movement * speed);
+        // Source: https://answers.unity.com/questions/803365/make-the-player-face-his-movement-direction.html
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
+        transform.Translate(movement * speed * Time.deltaTime, Space.World);
 
     }
 }
