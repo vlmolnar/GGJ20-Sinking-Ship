@@ -919,11 +919,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1179983404852504508, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1512825811767558648, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: water
       value: 
       objectReference: {fileID: 1374897214}
+    - target: {fileID: 1940020578552087066, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2780856520241529438, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -984,6 +994,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 566bae85b931ea842988708848c83ec3, type: 2}
+    - target: {fileID: 4791862537893075274, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4952626694026967163, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1048,6 +1063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039770925789772990, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7282320003678989545, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
@@ -1287,11 +1307,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10.7
       objectReference: {fileID: 0}
+    - target: {fileID: 1179983404852504508, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1512825811767558648, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: water
       value: 
       objectReference: {fileID: 1990575467}
+    - target: {fileID: 1940020578552087066, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2134050181020132155, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_IsActive
@@ -1367,6 +1397,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 566bae85b931ea842988708848c83ec3, type: 2}
+    - target: {fileID: 4791862537893075274, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4952626694026967163, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1421,6 +1456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039770925789772990, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7282320003678989545, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}

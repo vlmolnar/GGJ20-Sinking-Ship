@@ -6,6 +6,7 @@ public class WindowScript : MonoBehaviour
 {
 
     public bool isFixed;
+    public int roomId;
 
     // Start is called before the first frame update
     void Start()
