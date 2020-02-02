@@ -13,8 +13,10 @@ public class PlayerController : MonoBehaviour
     public Text gameOverText;
     public Text gameWinText;
     public GameObject water;
+    public GameObject character;
     public WindowScript script;
     public ButtonScript bScript;
+    Animator anim;
 
     //Private variables
     private Rigidbody rb;
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = character.GetComponent<Animator>();
         canMove = true;
         buildingLadder = false;
         fixingWindow = false;
@@ -132,6 +135,11 @@ public class PlayerController : MonoBehaviour
             // Source: https://answers.unity.com/questions/803365/make-the-player-face-his-movement-direction.html
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
             transform.Translate(movement * speed * wadingModifier * Time.deltaTime, Space.World);
+            anim.Play("Run");
+        }
+        else
+        {
+            anim.Play("Idle");
         }
 
     }
@@ -170,7 +178,11 @@ public class PlayerController : MonoBehaviour
     {
         //Debug.Log("Plank: " + plankCount + ", ladder: " + ladderCount);
 
-        if (!canMove) return;
+        if (!canMove)
+        {
+            anim.Play("Repair");
+            return;
+        }
 
         if (other.tag == "Button" && !pressingButton)
         {
