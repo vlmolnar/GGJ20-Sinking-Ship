@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private int plankCount;
     private int ladderCount;
-    private const int MAX_LADDER = 3;
+    private const int MAX_LADDER = 6;
     private float wadingModifier;
     private bool canMove;
     private double interactionStart = -10;
