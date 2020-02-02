@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Text gameWinText;
     public GameObject water;
     public WindowScript script;
+    public ButtonScript bScript;
 
     //Private variables
     private Rigidbody rb;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private bool fixingWindow;
     private bool drowned;
     private bool win;
+    private bool pressingButton;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,7 @@ public class PlayerController : MonoBehaviour
         canMove = true;
         buildingLadder = false;
         fixingWindow = false;
+        pressingButton = false;
         SetCountText();
         wadingModifier = 1.0f;
         drowned = false;
@@ -62,11 +65,11 @@ public class PlayerController : MonoBehaviour
         if (!drowned && ladderCount >= MAX_LADDER)
         {
             win = true;
-            gameWinText.text = "You Win";
+            gameWinText.text = "You Win!";
             return;
         }
 
-            if (fixingWindow)
+        if (fixingWindow)
         {
             if (Time.realtimeSinceStartup - interactionStart < 2)
             {
@@ -99,8 +102,14 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Finished using plank for ladder");
             }
         }
+        else if (pressingButton && Time.realtimeSinceStartup - interactionStart > 3)
+        {
+            pressingButton = false;
+            //waterRising = GameObject.FindGameObjectsWithTag("WaterRising")[0]; //needs a tag
+            Debug.Log("Finished pushing button");
+        }
 
-        float moveHorizontal, moveVertical;
+            float moveHorizontal, moveVertical;
         if (playerId == 1)
         {
             moveHorizontal = Input.GetAxis("Horizontal1");
@@ -145,11 +154,29 @@ public class PlayerController : MonoBehaviour
         ladderText.text = "Ladder x " + ladderCount.ToString() + "/" + MAX_LADDER;
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (!canMove) return;
+
+        if (other.tag == "Button")
+        {
+            interactionStart = Time.realtimeSinceStartup;
+            pressingButton = true;
+            Debug.Log("Started pressing button");
+        }
+   }
+
     void OnTriggerStay(Collider other)
     {
         //Debug.Log("Plank: " + plankCount + ", ladder: " + ladderCount);
 
         if (!canMove) return;
+
+        if (other.tag == "Button" && !pressingButton)
+        {
+            bScript = other.gameObject.GetComponent<ButtonScript>();
+            bScript.pressed = true;
+        }
 
         if ((playerId == 1 && Input.GetKeyDown("space")) || (playerId == 2 && Input.GetKeyDown(KeyCode.RightShift)))
         {
@@ -174,11 +201,15 @@ public class PlayerController : MonoBehaviour
                 {
                     Debug.Log("Window is already fixed");
                 }
-               
-                //fix window
-                
             }
+        }
+    }
 
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Button")
+        {
+            pressingButton = false;
         }
     }
 

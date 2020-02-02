@@ -8,6 +8,8 @@ TagManager:
   - Water1
   - Water2
   - Window
+  - LadderTrigger
+  - Button
   layers:
   - Default
   - TransparentFX

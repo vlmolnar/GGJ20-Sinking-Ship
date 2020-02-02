@@ -67,7 +67,7 @@ public class WaterRising : MonoBehaviour
             while (!found)
             {
                 int randNum = Mathf.RoundToInt(Random.Range(0, 8));
-                Debug.Log(randNum);
+                //Debug.Log(randNum);
                 script = windowArray[randNum].GetComponent<WindowScript>();
                 if ((gameObject.CompareTag("Water1") && script.roomId == 1)
                  || (gameObject.CompareTag("Water2") && script.roomId == 2))
@@ -77,11 +77,11 @@ public class WaterRising : MonoBehaviour
                         script.isFixed = false;
                         found = true;
                         timer = Time.realtimeSinceStartup;
-                        Debug.Log("we broke one gang");
+                        Debug.Log("Window broken");
                     }
                     else
                     {
-                        Debug.Log("no");
+                        //Debug.Log("no");
                     }
                 }
             }
