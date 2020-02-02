@@ -43,13 +43,16 @@ public class WaterRising : MonoBehaviour
 
         waterSpeedModifier = (float)(brokenWindowCount / 1.0);
 
-        if (brokenWindowCount == 0)
+        if (transform.position.y < 9)
         {
-            transform.position += Vector3.up * 0.001f;
-        }
-        else
-        {
-            transform.position += Vector3.up * 0.003f * waterSpeedModifier;
+            if (brokenWindowCount == 0)
+            {
+                transform.position += Vector3.up * 0.001f;
+            }
+            else
+            {
+                transform.position += Vector3.up * 0.003f * waterSpeedModifier;
+            }
         }
     }
 
