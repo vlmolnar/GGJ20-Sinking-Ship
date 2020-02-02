@@ -16,12 +16,14 @@ public class PlayerController : MonoBehaviour
     public GameObject character;
     public WindowScript script;
     public ButtonScript bScript;
+    //public PlankController pScript;
     Animator anim;
 
     //Private variables
     private Rigidbody rb;
     private int plankCount;
     private int ladderCount;
+    private GameObject[] plankArray;
     private const int MAX_LADDER = 6;
     private float wadingModifier;
     private bool canMove;
@@ -48,6 +50,18 @@ public class PlayerController : MonoBehaviour
         win = false;
         gameOverText.text = "";
         gameWinText.text = "";
+
+        if (playerId == 1)
+        {
+            plankArray = GameObject.FindGameObjectsWithTag("Room1LadderPlank");
+            Debug.Log("Player 1 plankArray length: " + plankArray.Length);
+        }
+        else
+        {
+            plankArray = GameObject.FindGameObjectsWithTag("Room2LadderPlank");
+            Debug.Log("Player 2 plankArray length: " + plankArray.Length);
+        }
+       
     }
 
     // Update is called once per frame
@@ -103,6 +117,21 @@ public class PlayerController : MonoBehaviour
                 SetCountText();
                 buildingLadder = false;
                 canMove = true;
+
+                Debug.Log(plankArray.Length);
+
+                for (int i = plankArray.Length - 1; i >= 0; i--)
+                {
+                    Renderer rend = plankArray[i].GetComponent<Renderer>();
+                    if (! rend.enabled)
+                    {
+                        //plankArray[i].SetActive(true);
+                        rend.enabled = true;
+                        Debug.Log("Plank set active");
+                        break;
+                    }
+                }
+
                 Debug.Log("Finished using plank for ladder");
             }
         }

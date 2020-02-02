@@ -5222,7 +5222,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &307909912
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10183,7 +10183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &433505853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10260,7 +10260,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &527539595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15335,7 +15335,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &880053085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30460,7 +30460,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1597106856
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30537,7 +30537,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1630865943
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30614,7 +30614,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1681408092
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35514,6 +35514,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 379827017212322774, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room2LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 379827017212322774, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 658526914280787540, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -35529,6 +35539,11 @@ PrefabInstance:
       propertyPath: waterSplash
       value: 
       objectReference: {fileID: 1162515963}
+    - target: {fileID: 1419328261651430446, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1512825811767558648, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: water
@@ -35544,6 +35559,11 @@ PrefabInstance:
       propertyPath: waterSplash
       value: 
       objectReference: {fileID: 704653904}
+    - target: {fileID: 2123936113194915594, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2428853560031971000, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_Center.x
@@ -35624,6 +35644,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0893181e8d8141f4a8c0c6b0e1b5c371, type: 2}
+    - target: {fileID: 4619129189431911202, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4791862537893075274, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: roomId
@@ -35634,6 +35659,16 @@ PrefabInstance:
       propertyPath: waterSplash
       value: 
       objectReference: {fileID: 1728211141}
+    - target: {fileID: 4901383915063172140, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room2LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901383915063172140, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4952626694026967163, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35764,9 +35799,34 @@ PrefabInstance:
       propertyPath: waterSplash
       value: 
       objectReference: {fileID: 873205806}
+    - target: {fileID: 6351948539864029182, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room2LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351948539864029182, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6645589836251359472, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080345971048507412, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7122062523508759847, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187068335098997239, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7282320003678989545, guid: c4f4d986403107e43808b8b1a328cdbe,
@@ -35778,6 +35838,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055226533158233317, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room2LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055226533158233317, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8185531783524295211, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
@@ -35799,6 +35869,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8643885251579383865, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8780135360177102312, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_Center.x
@@ -35808,6 +35883,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826676114473934024, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room2LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826676114473934024, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899480782521408811, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room2LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899480782521408811, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4f4d986403107e43808b8b1a328cdbe, type: 3}
@@ -35891,7 +35986,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &2109274558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -40937,6 +41032,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.030437866
       objectReference: {fileID: 0}
+    - target: {fileID: 379827017212322774, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room1LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 379827017212322774, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 658526914280787540, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -41007,6 +41112,11 @@ PrefabInstance:
       propertyPath: waterSplash
       value: 
       objectReference: {fileID: 836650851}
+    - target: {fileID: 2123936113194915594, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2134050181020132155, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_IsActive
@@ -41092,6 +41202,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0893181e8d8141f4a8c0c6b0e1b5c371, type: 2}
+    - target: {fileID: 4619129189431911202, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4791862537893075274, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: roomId
@@ -41102,6 +41217,16 @@ PrefabInstance:
       propertyPath: waterSplash
       value: 
       objectReference: {fileID: 1553584783}
+    - target: {fileID: 4901383915063172140, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room1LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901383915063172140, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4952626694026967163, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41202,9 +41327,34 @@ PrefabInstance:
       propertyPath: waterSplash
       value: 
       objectReference: {fileID: 2051919016}
+    - target: {fileID: 6351948539864029182, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room1LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351948539864029182, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6645589836251359472, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080345971048507412, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7122062523508759847, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187068335098997239, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7282320003678989545, guid: c4f4d986403107e43808b8b1a328cdbe,
@@ -41262,6 +41412,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.52221
       objectReference: {fileID: 0}
+    - target: {fileID: 8055226533158233317, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room1LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055226533158233317, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8185531783524295211, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: roomId
@@ -41282,6 +41442,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8643885251579383865, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8780135360177102312, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_Center.z
@@ -41296,6 +41461,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826676114473934024, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room1LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826676114473934024, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899480782521408811, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Room1LadderPlank
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899480782521408811, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4f4d986403107e43808b8b1a328cdbe, type: 3}
