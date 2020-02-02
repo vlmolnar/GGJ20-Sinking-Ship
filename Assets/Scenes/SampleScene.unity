@@ -1344,6 +1344,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Water2
       objectReference: {fileID: 0}
+    - target: {fileID: 8185531783524295211, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8310614936744015950, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_Center.x
@@ -1863,6 +1868,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Water1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185531783524295211, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: roomId
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8780135360177102312, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
