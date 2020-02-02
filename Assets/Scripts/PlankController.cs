@@ -38,7 +38,7 @@ public class PlankController : MonoBehaviour
         float n = 6.5f;
         float randX = Random.Range(plane.transform.position.x - n, plane.transform.position.x + n);
         float randZ = Random.Range(plane.transform.position.z - n, plane.transform.position.z + n);
-        plank.transform.position = new Vector3(randX, 11, randZ);
+        plank.transform.position = new Vector3(randX, 25, randZ);
         plank.SetActive(true);
         isActive = true;
         //Instantiate(plank, new Vector3(randX, 11, randZ), new Quaternion());
