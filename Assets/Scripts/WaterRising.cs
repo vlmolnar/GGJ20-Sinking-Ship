@@ -9,11 +9,12 @@ public class WaterRising : MonoBehaviour
     private float waterSpeedModifier = 1.0f;
     private GameObject[] windowArray;
     private int brokenWindowCount;
+    private double timer;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        timer = 0;
     }
 
     // Update is called once per frame
@@ -33,8 +34,12 @@ public class WaterRising : MonoBehaviour
                 if (!script.isFixed)
                 { brokenWindowCount++; }
             }
+
+
         }
         //Debug.Log(brokenWindowCount);
+
+        breakWindows();
 
         waterSpeedModifier = (float)(brokenWindowCount / 3.0);
 
@@ -45,6 +50,41 @@ public class WaterRising : MonoBehaviour
         else
         {
             transform.position += Vector3.up * 0.003f * waterSpeedModifier;
+        }
+    }
+
+    void breakWindows()
+    {
+        if (Time.realtimeSinceStartup - timer > 5 && brokenWindowCount < 4)
+        {
+            if (Time.realtimeSinceStartup - timer > 5.2)
+            {
+                timer = Time.realtimeSinceStartup;
+                return;
+            }
+
+            bool found = false;
+            while (!found)
+            {
+                int randNum = Mathf.RoundToInt(Random.Range(0, 8));
+                Debug.Log(randNum);
+                script = windowArray[randNum].GetComponent<WindowScript>();
+                if ((gameObject.CompareTag("Water1") && script.roomId == 1)
+                 || (gameObject.CompareTag("Water2") && script.roomId == 2))
+                {
+                    if (script.isFixed)
+                    {
+                        script.isFixed = false;
+                        found = true;
+                        timer = Time.realtimeSinceStartup;
+                        Debug.Log("we broke one gang");
+                    }
+                    else
+                    {
+                        Debug.Log("no");
+                    }
+                }
+            }
         }
     }
 }
