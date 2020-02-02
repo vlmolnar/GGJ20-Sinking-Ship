@@ -20264,36 +20264,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6021355680943439126, guid: 94a9ccfb69abada40b5052cb97efcd67,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -40787,26 +40757,6 @@ PrefabInstance:
     - target: {fileID: 3071207309973437350, guid: 94a9ccfb69abada40b5052cb97efcd67,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5499855303865809921, guid: 94a9ccfb69abada40b5052cb97efcd67,
-        type: 3}
-      propertyPath: m_Center.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7425403009449306108, guid: 94a9ccfb69abada40b5052cb97efcd67,
