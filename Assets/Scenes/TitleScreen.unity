@@ -419,7 +419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162674319}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 214, y: 150, z: 140}
+  m_LocalPosition: {x: 167, y: 150, z: 140}
   m_LocalScale: {x: 73.59501, y: 73.59501, z: 53.642456}
   m_Children: []
   m_Father: {fileID: 0}
@@ -493,7 +493,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sinking Ship
+  m_Text: Under Pressure
 --- !u!222 &421543361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c30f75f22d18d544c83e10becd63532e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: SampleScene
+  nextSceneName: GameScreen
 --- !u!4 &830740818
 Transform:
   m_ObjectHideFlags: 0
