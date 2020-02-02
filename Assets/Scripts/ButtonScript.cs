@@ -9,6 +9,8 @@ public class ButtonScript : MonoBehaviour
     public BreakWindowScript script;
     public int roomId;
     private double lastPressTime;
+    private bool isActive;
+   // private double lastActive;
 
     // Start is called before the first frame update
     void Start()
@@ -20,12 +22,16 @@ public class ButtonScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
+
         if (pressed)
         {
            
             script = gameObject.GetComponent<BreakWindowScript>();
             script.breakWindows(roomId);
             gameObject.SetActive(false);
+            pressed = false;
+            isActive = false;
             Debug.Log("Button hidden");
    
         } 

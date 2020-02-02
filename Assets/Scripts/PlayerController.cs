@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
         if (fixingWindow)
         {
-            if (Time.realtimeSinceStartup - interactionStart < 2)
+            if (Time.realtimeSinceStartup - interactionStart < 1.4f)
             {
                 //Debug.Log(Time.realtimeSinceStartup - interactionStart);
                 return;
@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (buildingLadder)
         {
-            if (Time.realtimeSinceStartup - interactionStart < 3)
+            if (Time.realtimeSinceStartup - interactionStart < 1.8f)
             {
                 //Debug.Log(Time.realtimeSinceStartup - interactionStart);
                 return;
@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Finished using plank for ladder");
             }
         }
-        else if (pressingButton && Time.realtimeSinceStartup - interactionStart > 3)
+        else if (pressingButton && Time.realtimeSinceStartup - interactionStart > 1)
         {
             pressingButton = false;
             //waterRising = GameObject.FindGameObjectsWithTag("WaterRising")[0]; //needs a tag
@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour
 
         if (water.transform.position.y > 0)
         {
-            wadingModifier = 1 - (water.transform.position.y / 10);
+            wadingModifier = 1 - (water.transform.position.y / 25);
         }
 
         if (movement != Vector3.zero)

@@ -401,6 +401,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 82945573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &143686929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4574504900711902569, guid: c4f4d986403107e43808b8b1a328cdbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1911298156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &159917662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4574504900711902569, guid: c4f4d986403107e43808b8b1a328cdbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 8395966081293397426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &286435248
 GameObject:
   m_ObjectHideFlags: 0
@@ -20282,7 +20294,7 @@ PrefabInstance:
     - target: {fileID: 8279002673210044137, guid: 94a9ccfb69abada40b5052cb97efcd67,
         type: 3}
       propertyPath: speed
-      value: 17
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8279002673210044137, guid: 94a9ccfb69abada40b5052cb97efcd67,
         type: 3}
@@ -35514,6 +35526,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8062824461546617780, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 143686929}
     - target: {fileID: 379827017212322774, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_TagString
@@ -40907,7 +40924,7 @@ PrefabInstance:
     - target: {fileID: 8279002673210044137, guid: 94a9ccfb69abada40b5052cb97efcd67,
         type: 3}
       propertyPath: speed
-      value: 17
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8279002673210044137, guid: 94a9ccfb69abada40b5052cb97efcd67,
         type: 3}
@@ -41027,6 +41044,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8062824461546617780, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 159917662}
     - target: {fileID: 328022633702011085, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalScale.x

@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlankController : MonoBehaviour
 {
+    public GameObject button;
     public GameObject plank;
     public GameObject plane;
-    private bool isActive;
-    private double lastActive;
+    private bool isActivePlank;
+    private double lastActivePlank;
+    private bool isActiveButton;
+    private double lastActiveButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        lastActive = 0;
+        lastActivePlank = 0;
+        lastActiveButton = 10;
         addPlank();
     }
 
@@ -21,26 +25,41 @@ public class PlankController : MonoBehaviour
     {
         if (! plank.gameObject.activeInHierarchy)
         {
-            if (isActive)
+            if (isActivePlank)
             {
-                isActive = false;
-                lastActive = Time.realtimeSinceStartup;
+                isActivePlank = false;
+                lastActivePlank = Time.realtimeSinceStartup;
             }
-            else if (Time.realtimeSinceStartup - lastActive > 5)
+            else if (Time.realtimeSinceStartup - lastActivePlank > 5)
             {
                 addPlank();
+            }
+        }
+
+        if (!button.gameObject.activeInHierarchy)
+        {
+            if (isActiveButton)
+            {
+                isActiveButton = false;
+                lastActiveButton = Time.realtimeSinceStartup;
+            }
+            else if (Time.realtimeSinceStartup - lastActiveButton > 15)
+            {
+                button.SetActive(true);
+                isActiveButton = true;
             }
         }
     }
 
     void addPlank()
     {
-        float n = 10f;
+        float n = 9f;
         float randX = Random.Range(plane.transform.position.x - n, plane.transform.position.x + n);
         float randZ = Random.Range(plane.transform.position.z - n, plane.transform.position.z + n);
         plank.transform.position = new Vector3(randX, 25, randZ);
         plank.SetActive(true);
-        isActive = true;
+        isActivePlank = true;
         //Instantiate(plank, new Vector3(randX, 11, randZ), new Quaternion());
     }
+
 }

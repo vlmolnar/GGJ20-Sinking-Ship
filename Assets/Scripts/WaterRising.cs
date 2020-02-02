@@ -41,7 +41,7 @@ public class WaterRising : MonoBehaviour
 
         breakWindows();
 
-        waterSpeedModifier = (float)(brokenWindowCount / 1.6);
+        waterSpeedModifier = (float)(brokenWindowCount / 1.0);
 
         if (transform.position.y < 9)
         {
