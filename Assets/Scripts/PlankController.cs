@@ -16,7 +16,7 @@ public class PlankController : MonoBehaviour
     void Start()
     {
         lastActivePlank = 0;
-        lastActiveButton = 10;
+        lastActiveButton = 0;
         addPlank();
     }
 

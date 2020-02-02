@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Finished using plank for ladder");
             }
         }
-        else if (pressingButton && Time.realtimeSinceStartup - interactionStart > 1)
+        else if (pressingButton && Time.realtimeSinceStartup - interactionStart > 0.2f)
         {
             pressingButton = false;
             //waterRising = GameObject.FindGameObjectsWithTag("WaterRising")[0]; //needs a tag
