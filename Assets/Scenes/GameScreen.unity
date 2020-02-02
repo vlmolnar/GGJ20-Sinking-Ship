@@ -35649,6 +35649,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4739205073497444860, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.87
+      objectReference: {fileID: 0}
     - target: {fileID: 4791862537893075274, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: roomId
@@ -41047,6 +41052,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 404420510280081377, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.33
+      objectReference: {fileID: 0}
     - target: {fileID: 657734592419176314, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -41217,6 +41227,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4739205073497444860, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739205073497444860, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.03
+      objectReference: {fileID: 0}
     - target: {fileID: 4791862537893075274, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: roomId
@@ -41357,6 +41377,11 @@ PrefabInstance:
       propertyPath: roomId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6950778041445541005, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.65
+      objectReference: {fileID: 0}
     - target: {fileID: 7080345971048507412, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
       propertyPath: m_Enabled
@@ -41441,6 +41466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: roomId
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265133427827189427, guid: c4f4d986403107e43808b8b1a328cdbe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.38
       objectReference: {fileID: 0}
     - target: {fileID: 8310614936744015950, guid: c4f4d986403107e43808b8b1a328cdbe,
         type: 3}
