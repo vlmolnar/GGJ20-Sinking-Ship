@@ -41,11 +41,11 @@ public class WaterRising : MonoBehaviour
 
         breakWindows();
 
-        waterSpeedModifier = (float)(brokenWindowCount / 3.0);
+        waterSpeedModifier = (float)(brokenWindowCount / 1.0);
 
         if (brokenWindowCount == 0)
         {
-            transform.position += Vector3.down * 0.001f;
+            transform.position += Vector3.up * 0.001f;
         }
         else
         {
@@ -55,9 +55,9 @@ public class WaterRising : MonoBehaviour
 
     void breakWindows()
     {
-        if (Time.realtimeSinceStartup - timer > 5 && brokenWindowCount < 4)
+        if (Time.realtimeSinceStartup - timer > 8 && brokenWindowCount < 4)
         {
-            if (Time.realtimeSinceStartup - timer > 5.2)
+            if (Time.realtimeSinceStartup - timer > 8.2)
             {
                 timer = Time.realtimeSinceStartup;
                 return;
