@@ -1006,6 +1006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d9cf3cfeaecdb40bb5471625b01559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
   plank: {fileID: 1419328261651430446}
   plane: {fileID: 2134050181020132155}
 --- !u!1 &8980482812914299360
@@ -2211,7 +2212,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6acececf103c47945aa13f5a9663c6de, type: 2}
+      objectReference: {fileID: 2100000, guid: a3a6fb3e579f7d44e91d9a5ae26475de, type: 2}
     - target: {fileID: 6411729188445928339, guid: 81e4c049a25d8ff4a826393df72a7ec7,
         type: 3}
       propertyPath: m_Name
