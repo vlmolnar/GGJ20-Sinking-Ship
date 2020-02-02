@@ -151,7 +151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0893181e8d8141f4a8c0c6b0e1b5c371, type: 2}
+  - {fileID: 2100000, guid: b0bf8a77e184e7a4e90dc665838ffd0d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -642,7 +642,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0893181e8d8141f4a8c0c6b0e1b5c371, type: 2}
+  - {fileID: 2100000, guid: cbae026d757d33b449a4682f032b7d0e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -735,7 +735,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0893181e8d8141f4a8c0c6b0e1b5c371, type: 2}
+  - {fileID: 2100000, guid: b0bf8a77e184e7a4e90dc665838ffd0d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1402,7 +1402,7 @@ PrefabInstance:
     - target: {fileID: 7305825173380600194, guid: 17ba474b78c69484588a7112fd7d92b9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0902
+      value: 1.2757
       objectReference: {fileID: 0}
     - target: {fileID: 7305825173380600194, guid: 17ba474b78c69484588a7112fd7d92b9,
         type: 3}
@@ -1452,7 +1452,7 @@ PrefabInstance:
     - target: {fileID: 7305825173380600194, guid: 17ba474b78c69484588a7112fd7d92b9,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 361.18942
+      value: 411.3225
       objectReference: {fileID: 0}
     - target: {fileID: 7305825173380600194, guid: 17ba474b78c69484588a7112fd7d92b9,
         type: 3}
@@ -1762,7 +1762,7 @@ PrefabInstance:
     - target: {fileID: 7305825173380600194, guid: 17ba474b78c69484588a7112fd7d92b9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0902
+      value: 1.2757
       objectReference: {fileID: 0}
     - target: {fileID: 7305825173380600194, guid: 17ba474b78c69484588a7112fd7d92b9,
         type: 3}
@@ -1812,7 +1812,7 @@ PrefabInstance:
     - target: {fileID: 7305825173380600194, guid: 17ba474b78c69484588a7112fd7d92b9,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 361.18942
+      value: 411.3225
       objectReference: {fileID: 0}
     - target: {fileID: 7305825173380600194, guid: 17ba474b78c69484588a7112fd7d92b9,
         type: 3}
