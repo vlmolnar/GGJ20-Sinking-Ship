@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         anim = character.GetComponent<Animator>();
+        anim.speed = 1.5f;
         canMove = true;
         buildingLadder = false;
         fixingWindow = false;
