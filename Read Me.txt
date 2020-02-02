@@ -1,0 +1,9 @@
+Thanks for playing Under Pressure!
+
+Controls:
+Left Player - WASD for movement + Space to interact with items
+Right Player - Arrow Keys for movement + Right Shift button to interact with items
+
+Have fun!
+
+Music by Kevin Macleoud - "Netherworld Shanty"
