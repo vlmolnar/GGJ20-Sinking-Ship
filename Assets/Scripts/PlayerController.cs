@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public int playerId;
     public Text countText;
     public Text ladderText;
+    public Text gameOverText;
+    public Text gameWinText;
     public GameObject water;
     public WindowScript script;
 
@@ -17,12 +19,14 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private int plankCount;
     private int ladderCount;
-    private const int MAX_LADDER = 5;
+    private const int MAX_LADDER = 3;
     private float wadingModifier;
     private bool canMove;
     private double interactionStart = -10;
     private bool buildingLadder;
     private bool fixingWindow;
+    private bool drowned;
+    private bool win;
 
     // Start is called before the first frame update
     void Start()
@@ -33,12 +37,36 @@ public class PlayerController : MonoBehaviour
         fixingWindow = false;
         SetCountText();
         wadingModifier = 1.0f;
+        drowned = false;
+        win = false;
+        gameOverText.text = "";
+        gameWinText.text = "";
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (fixingWindow)
+     /*   if (drowned || win)
+        {
+            return;
+        }*/
+
+        if (!win && water.transform.position.y > 7)
+        {
+            canMove = false;
+            drowned = true;
+            gameOverText.text = "You Died";
+            return;
+        }
+
+        if (!drowned && ladderCount >= MAX_LADDER)
+        {
+            win = true;
+            gameWinText.text = "You Win";
+            return;
+        }
+
+            if (fixingWindow)
         {
             if (Time.realtimeSinceStartup - interactionStart < 2)
             {
