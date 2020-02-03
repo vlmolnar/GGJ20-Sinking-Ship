@@ -3,23 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(AudioSource))]
 public class Control : MonoBehaviour
 {
-    public string nextSceneName;
-    AudioSource audioData;
-
+    public string startSceneName;
+    public string controlsSceneName;
+    public string titleSceneName;
+    //AudioSource audioData;
+    //private static Control self;
+   
     void Start()
     {
-        audioData = GetComponent<AudioSource>();
-        audioData.Play(0);
-        Debug.Log("started");
-        DontDestroyOnLoad(this.gameObject);
+
     }
-    public void NextScene()
+
+    public void StartScene()
     {
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadScene(startSceneName);
         Debug.Log("Game start");
+    }
+
+    public void ControlsScene()
+    {
+        SceneManager.LoadScene(controlsSceneName);
+        Debug.Log("Game controls");
+    }
+
+    public void TitleScene()
+    {
+        SceneManager.LoadScene(titleSceneName);
+        Debug.Log("Game title screen");
     }
 
     public void QuitGame()
